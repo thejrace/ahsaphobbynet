@@ -1,0 +1,88 @@
+<?php 
+
+/*DOKUMANTASYON OBAREY DERECESINDE BUYUDU BU KOD ( son upd. 30.01.2016 )
+	
+	NOT -> IE8 ve Android de testleri yaptim calisiyor hersey
+
+	####### JS - PHP OLD IMG olayı
+		- her editor guncellemesinde yeni bir resim olusturdugum icin, sayfada ilk acilan default
+		preview den başlamak üzere her guncellemede bir onceki resmi php ile silmek icin ismini ajax ile
+		her guncellemede gonderiyorum. ama kullanici her reloadda tekrar yeni resim oluşturdugu icin
+		siparis vermedigi surece editor_previews de kaliyor resim... onlar icin bir çözüm bulmak lazim
+
+		- PHP ile resmin degistirilme tarihine ulasabiliyormuşuz oradan yürünebilir. fakat otomatik olarak
+		o temizleme kodunu nasil calistiricagim? manuel yapilir eyvallahta otomatik nasi olur?
+
+
+	####### JS
+	
+	3 temel obje init ediliyor sayfada;
+		1 - Product
+			- Ana ürün bilgileri ( id, name, price, seo, varyant sayisi, editorlu mu degil mi bilgisi )
+			- Slider, fiyat guncelleme vs metodlar
+
+		2 - Variants
+			- Varyant seçimi ile ilgili degiskenler;
+				@chain_flag -> tum varyantlar secildi mi kontrol degiskeni, default false
+							-> her varyant seçiminde degeri degistirilir, eger son varyanta gelindiyse true olur
+				
+				@code[] 	-> her varyant seçiminde secili varyant ID leri bu array de listeleniyor
+							-> listeleme de sıra çok önemli dogru kodu olusturabilmek icin o yuzden
+							-> ornegin toplam 4 varyant olsun, tum varyantlar seciliyken
+							-> 2. varyant degeri degistirildiyse eger 3. ve 4. varyantlar listeden silinir.
+
+				@code_check -> tum varyantlar secildikten sonra @code listesindeki varyant ID leri "-" ile
+							-> birlestirip oluşan final varyant kodu 
+
+				@data 		-> tum varyantlar secildikten sonra, ajax ile varyant ürünün bilgilerinin depolandigi obje
+							-> her varyant seciminde degeri degisir, son varyanta gelene kadar tum degerleri null 
+
+			- Metodlar
+				@change 	-> her varyant select degisiminde yapilan islemler. sirayla;
+								# her değişimde uyguladigimiz standart islemler var bunlar;
+									1 - @chain_flag false yapiyoruz, çünkü sona gelindi mi gelinmedi mi bilmiyoruz burada henüz
+									2 - @data objesindeki tüm bilgileri boşaltiyoruz, yukaridaki ile ayni sebepten
+									3 - urun sayfasindaki slider ve fiyat bilgilerini default hale getiriyoruz. gene ayni sebep.
+									4 - secilen varyanttan sonraki tum varyantların ID lerini @code listesinden siliyoruz ve selectlerini disable ediyoruz
+									yani default seçiniz.. hale getiriyoruz.
+									5 - seçilen varyantin ID yi @code listesine ekliyoruz.
+									6 - eger varyant "seçiniz..." ( value = 0 ) harici değiştirildiyse, varsa alt varyantlarini listeleyecegiz,
+									yoksa son varyant diyip ajax ile varyant ürünün bilgilerini aliyoruz.
+									7 - alt varyantlari listeleme Category_Tree sisteminde ki gibi, her bir varyant selectin ID si varyant_NO seklinde
+									bu varyantın alt varyantlarını option olarak variant_[NO + 1] selectine ine ekliyoruz, eger variant_[NO + 1] yoksa anliyorum ki son varyanta gelmişiz
+									8 - son varyanta geldiysek ajax_product ta kodun geçerliligini vs kontrolleri yaptiktan sonra,
+									@chain_flag true, son varyant seçildi artik
+									@data objesine varyant ürünün bilgilerini aliyoruz,
+									urun sayfasini guncelliyoruz yeni varyant fiyatiyla,
+									eger editor varsa editore özel urun sayfasini guncelliyoruz
+
+		3 - AHEditor
+			- Formlü ürünlere özel text editor
+				Metodlar:
+					@init  	-> html elementlerin init edilmesi ve @selected_font yani seçilen fontun tanimlanmasi,
+							-> fontlar normal varyantlar gibi degil "seçiniz..." yok, direk ilk sıradaki seçili halde geliyor
+
+					@update_preview  -> editore yazilan yaziyi alma ve ajax request yapma
+
+					@request_preview -> server-side varyant ve urun kontrolleri icin gereken bilgiler ve
+									 -> editor preview icin gerekli datalari gonderiyoruz 
+									 -> geriye guncel fiyat ve preview bilgileri dönüyor bunlarla;
+									 	# eger text editor boşsa fiyat -1 olarak geliyor o zaman urun sayfasini default hale getiriyoruz
+									 	# eger boş degilse fiyat, resim guncellemelerini yapiyoruz.
+									 	# old_img vs mantigi PHP ile baglanti aciklamasinda 
+
+	Ürün sayfası üç şekilde olabilir;
+		1- Varyantsız tekil ürün
+		2- Varyantlı ürün
+		3- Formlu(editörlü) ürün ( varyantlı )
+
+	1 - Varyantsız ürün:
+		Herhangi bir atraksiyon yok yalnızca Slider ve Product init ediliyor.	
+
+	2- Varyantlı ürün:
+		Orta derece atraksiyonlu Slider, Variants, Product init ediliyor.
+		Variants ve Product objeleri baglantili, öncelikle varyant seçimi ve devaminda neler oluyor sırayla şöyle;
+
+	3- Formlu( editörlü )
+		Normal varyantli ürün gibi fakat editor icin ayri olarak
+		font seçimi, editor guncelleme vs yapiliyor

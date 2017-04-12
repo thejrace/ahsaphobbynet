@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+
+
+/* COMMON admin ve site */
+
+/* jquery sortable cursor obareyi */
+.ui-sortable-handle {
+	cursor:move;
+}
+
+.fs-13 {
+	font-size:13px;
+}
+
+.fs-11 {
+	font-size:11px;
+}
+
+.sag-0 {
+	right:0;
+}
+
+button {
+	cursor:pointer;
+	background:none;
+}
+
+.open {
+	display:block !important;
+}
+
+.fleft {
+	float:left;
+}
+
+.fright {
+	float:right;
+}
+
+.clear {
+	float:none;
+	clear:both;
+}
+
+.txt-center {
+	text-align:center;
+}
+
+.txtbold {
+	font-weight:bold;
+}
+
+span.brline {
+	display:block;
+}
+
+.mgtop-7 {
+	margin-top:7px;
+}
+
+.mgtop-8 {
+	margin-top:8px;
+}
+
+.mg-none {
+	margin:0 !important;
+}
+
+.blocked {
+	opacity:0.3;
+	cursor:not-allowed;
+	z-index:999;
+}
+
+.clearfix:after {
+	clear:both;
+	visibility:hidden;
+	height:0;
+	content:"";
+	display:block;
+}
+
+/* POPUP */
+#popup-overlay {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#717171;
+	width:100%;
+	height:100%;
+	opacity:0.8;
+	z-index:1000;
+}
+
+#popup {
+	display:none;
+	/*left:700px;*/
+	position:absolute;
+	top:15%;
+	padding:20px;
+	background:#fff;
+	box-shadow:4px 5px 10px #5a5a5a;
+	padding:10px;
+	z-index:10001;
+}
+
+#popup-header{
+	padding:15px 5px;
+	font-size:20px;
+	margin-bottom:10px;
+	border-bottom:1px dashed #d3d3d3;
+}
+
+#popup-buton {
+	position: absolute;
+	right: -8px;
+	top: -18px;
+	font-size:30px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+/* BUTONLAR*/
+
+.btn-kucuk {
+	color:white;
+	text-shadow: 2px 1px 1px #545454;
+	letter-spacing:1px;
+	padding:7px 10px 5px 10px;
+	margin-right:10px;
+	background:#fc6e51;
+	border-bottom:2px solid #e9573f;
+	border-radius:5px;
+	font-family:'ralewaysemibold';
+	display:block;
+	cursor:pointer;
+	transition:all ease-in-out 0.1s;
+}
+
+.btn-buyuk{
+	color:white;
+	text-shadow: 2px 1px 1px #545454;
+	letter-spacing:1px;
+	padding:10px 20px 8px 20px;
+	margin-right:20px;
+	background:#fc6e51;
+	border-bottom:2px solid #e9573f;
+	border-radius:5px;
+	font-family:'ralewaysemibold';
+	display:block;
+	cursor:pointer;
+	transition:all ease-in-out 0.1s;
+}
+
+.btn-buyuk:active,
+.btn-kucuk:active {
+	box-shadow:inset 1px 2px 2px #4a4a4a;
+}
+
+.btn-kucuk.temp-mavi,
+.btn-buyuk.temp-mavi {
+	background:#4fc1e9;
+	border-bottom:2px solid #3bafda;
+}
+.btn-buyuk.temp-sari, 
+.btn-kucuk.temp-sari {
+	background:#ffce54;
+	border-bottom:2px solid #f6bb42;
+}
+
+.btn-buyuk.temp-mint,
+.btn-kucuk.temp-mint {
+	background:#48cfad;
+	border-bottom:2px solid #37bc9b;
+}
+
+.btn-buyuk.temp-pembe,
+.btn-kucuk.temp-pembe {
+	background:#ec87c0;
+	border-bottom:2px solid #d770ad;
+}
+
+.btn-buyuk.temp-mor,
+.btn-kucuk.temp-mor {
+	background:#ac92ec;
+	border-bottom:2px solid #967adc;
+}
+
+.btn-buyuk.temp-kirmizi,
+.btn-kucuk.temp-kirmizi {
+	background:#ed5565;
+	border-bottom:2px solid #da4453;
+}
+
+.btn-buyuk.temp-dark,
+.btn-kucuk.temp-dark {
+	background:#434a54;
+	border-bottom:2px solid #1d222a;
+}
+
+.btn-buyuk.temp-gri,
+.btn-kucuk.temp-gri {
+	background:#a4a9ae;
+	border-bottom:2px solid #83898f;
+}
+
+
+.btn-buyuk-aktif {
+	border-bottom:3px solid orange;
+}
+
+button[disabled] {
+	opacity:0.8;
+	border-bottom:2px solid #d1d1d1;
+}

@@ -1,0 +1,17 @@
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Notice:  Undefined variable: INPUTS_LIST in /home/ahsaphobby.net/httpdocs/v2/admin/ajax/ajax_variants.php on line 62
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51
+[18-Dec-2015 23:28:16 Europe/Istanbul] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ahsaphobby.net/httpdocs/v2/common/class/Validation.php on line 51

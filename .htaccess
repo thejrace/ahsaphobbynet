@@ -1,0 +1,10 @@
+RewriteEngine On
+
+#QSA -> degistirilen url in sonuna normal GET parametreleri eklemek icin ( product/atkafasi/104?normal_get=aborey )
+RewriteRule ^urun/(.*)/([0-9a-zA-Z-_]+)$ site/product.php?pid=$2&name=$1 [QSA,L,NC]
+RewriteRule ^kategori/(.*)/([0-9a-zA-Z-_]+)$ site/category.php?katid=$2&kname=$1 [L,NC]
+
+RewriteRule ^giris-yap$ site/login.php [L,NC]
+RewriteRule ^kayit-ol$ site/register.php [L,NC]
+RewriteRule ^cikis$ site/logout.php [L,NC]
+RewriteRule ^giris$ site/index.php [L,NC]
