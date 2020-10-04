@@ -144,7 +144,7 @@
 					<div class="bullet table-col fleft"><span>1</span></div>
 					<div class="thumb table-col fleft">
 						<div class="thumb-vertical">
-							<img src="http://ahsaphobby.net/v2/res/img/static/product_img/product-42-1-resized.png" />
+							<img src="http://ahsaphobbynet.test/res/img/static/product_img/product-42-1-resized.png" />
 						</div>
 					</div>
 					<div class="info table-col fleft">
@@ -161,7 +161,7 @@
 					<div class="bullet table-col fleft"><span>2</span></div>
 					<div class="thumb table-col fleft ">
 						<div class="thumb-vertical">
-							<img src="http://ahsaphobby.net/v2/res/img/static/product_img/product-5-1-resized.png" />
+							<img src="http://ahsaphobbynet.test/res/img/static/product_img/product-5-1-resized.png" />
 						</div>
 					</div>
 					<div class="info table-col fleft">
@@ -178,7 +178,7 @@
 					<div class="bullet table-col fleft"><span>3</span></div>
 					<div class="thumb table-col fleft">
 						<div class="thumb-vertical">
-							<img src="http://ahsaphobby.net/v2/res/img/static/product_img/product-6-1-resized.png" />
+							<img src="http://ahsaphobbynet.test/res/img/static/product_img/product-6-1-resized.png" />
 						</div>
 					</div>
 					<div class="info table-col fleft">

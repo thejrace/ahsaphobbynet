@@ -1,5 +1,5 @@
 <?php
-	$Meta_Tags = new Meta_Tags;
+	/*$Meta_Tags = new Meta_Tags;
 	// eger aktif sayfalarda ekstra taglar tanimlanmamisa
 	// hata vermemesi icin bos string yap
 	if( !isset( $TAG_TITLE ) && !isset( $TAG_KEYWORDS ) && !isset( $TAG_DESCRIPTION ) ){
@@ -9,8 +9,10 @@
 	}
 	// taglari olustur
 	$Meta_Tags->create_tags( array( 'title' => $TAG_TITLE, 'keywords' => $TAG_KEYWORDS, 'description' => $TAG_DESCRIPTION ) );
+
 	$META = $Meta_Tags->get_meta();
-	$OG   = $Meta_Tags->get_og();
+	$OG   = $Meta_Tags->get_og();*/
+
 
 	$RETURN_URL = substr( SITE_URL . substr( $_SERVER["REQUEST_URI"], 1 ), 33 );
 
@@ -28,27 +30,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="http://ahsaphobby.net/v2/res/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="http://ahsaphobby.net/v2/res/css/ahsaphobby.css" />
-        <link rel="stylesheet" type="text/css" href="http://ahsaphobby.net/v2/res/css/form_elements.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo MAIN_URL ?>res/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo MAIN_URL ?>res/css/ahsaphobby.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo MAIN_URL ?>res/css/form_elements.css" />
         <!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="http://ahsaphobby.net/v2/res/css/ahsaphobby-ie.css" />
+			<link rel="stylesheet" type="text/css" href="<?php echo MAIN_URL ?>res/css/ahsaphobby-ie.css" />
 		<![endif]-->
-		<script src="http://ahsaphobby.net/v2/res/js/common.js"></script>
-        <!-- <script src="http://ahsaphobby.net/v2/res/js/jquery.js"></script> -->
-        <script src="http://ahsaphobby.net/v2/res/js/main.js"></script>
-        <script src="http://ahsaphobby.net/v2/res/js/main_admin.js"></script>
+		<script src="<?php echo MAIN_URL ?>res/js/common.js"></script>
+        <!-- <script src="http://ahsaphobbynet.test/res/js/jquery.js"></script> -->
+        <script src="<?php echo MAIN_URL ?>res/js/main.js"></script>
+        <script src="<?php echo MAIN_URL ?>res/js/main_admin.js"></script>
        <!--  <script type="text/javascript" src="http://ahsaphobby.net/resources/js/prototype.js"></script> -->
-        <meta name='description' content="<?php echo $META['description'] ?>">
+        <!-- <meta name='description' content="<?php echo $META['description'] ?>">
 		<meta name='keywords' content="<?php echo $META['keywords'] ?>">
 		<meta name='title' content="<?php echo $META['title'] ?>">
 
-		<meta property="og:title" content="<?php echo $OG['title'] ?>">
+		<<meta property="og:title" content="<?php echo $OG['title'] ?>">
 		<meta property='og:keywords' content="<?php echo $OG['keywords'] ?>">
 	    <meta property="og:type" content="<?php echo $OG['type'] ?>">
 	    <meta property="og:url" content="<?php echo $OG['url'] ?>">
 	    <meta property="og:site_name" content="<?php echo $OG['site_name'] ?>">
-	    <meta property="og:description" content="<?php echo $OG['description'] ?>">
+	    <meta property="og:description" content="<?php echo $OG['description'] ?>"> -->
 
        	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">

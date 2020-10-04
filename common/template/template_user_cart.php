@@ -1,7 +1,7 @@
 			    										<li>
 			    											<div class="cart-item clearfix">
 			    												<div class="content-left">
-			    													<div class="thumb"><img src="http://ahsaphobby.net/v2/res/img/static/product_img/product-107-1.png" /></div>
+			    													<div class="thumb"><img src="http://ahsaphobbynet.test/res/img/static/product_img/product-107-1.png" /></div>
 			    												</div>
 			    												<div class="content-right">
 			    													<div class="item-name"><a href="">İSME ÖZEL PANO</a></div>
@@ -32,7 +32,7 @@
 			    										<li>
 			    											<div class="cart-item clearfix">
 			    												<div class="content-left">
-			    													<div class="thumb"><img src="http://ahsaphobby.net/v2/res/img/static/product_img/product-107-1.png" /></div>
+			    													<div class="thumb"><img src="http://ahsaphobbynet.test/res/img/static/product_img/product-107-1.png" /></div>
 			    												</div>
 			    												<div class="content-right">
 			    													<div class="item-name"><a href="">KAFANA GÖRE TABLO</a></div>

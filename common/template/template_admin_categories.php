@@ -111,8 +111,8 @@
 		function new_icon( item_id ){
 			Popup.on( ' <div style="margin-bottom:10px;"> \
 				<button type="button" onclick="product_img_delete( '+item_id+', 0, \'category\' )"><i class="sq_20x20 table-sil" title="Resmi Sil" ></i>Resmi Sil</button> \
-					<button type="button" onmouseenter="AHTooltip(\'img\', \'http://ahsaphobby.net/v2/res/img/static/category_img/category-'+item_id+'.png\', this, event)" onclick="AHTooltip(\'img\', \'http://ahsaphobby.net/v2/res/img/static/category_img/category-'+item_id+'.png\', this, event)"> \
-						<i class="sq_20x20 table-photo" onmouseenter="AHTooltip(\'img\', \'http://ahsaphobby.net/v2/res/img/static/category_img/category-'+item_id+'.png\', this, event)" title="Resmi Görüntüle"></i>Önizleme \
+					<button type="button" onmouseenter="AHTooltip(\'img\', \'http://ahsaphobbynet.test/res/img/static/category_img/category-'+item_id+'.png\', this, event)" onclick="AHTooltip(\'img\', \'http://ahsaphobbynet.test/res/img/static/category_img/category-'+item_id+'.png\', this, event)"> \
+						<i class="sq_20x20 table-photo" onmouseenter="AHTooltip(\'img\', \'http://ahsaphobbynet.test/res/img/static/category_img/category-'+item_id+'.png\', this, event)" title="Resmi Görüntüle"></i>Önizleme \
 					</button> \
 			</div> \
 			<form action="" method="post" enctype="multipart/form-data" id="upload_form" onsubmit="form_submit_v3( this, true, event )"> \

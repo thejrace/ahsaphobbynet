@@ -24,9 +24,9 @@ AHReady(function(){
 
 var AHBase = {
 	version   : "2.001",
-	url       : "http://ahsaphobby.net/v2/",
+	url       : "http://ahsaphobbynet.test/",
 	cur_url   : location.href,
-	ajax      : "http://ahsaphobby.net/v2/site/ajax/ajax_",
+	ajax      : "http://ahsaphobbynet.test/site/ajax/ajax_",
 	display_lang 	  : "TR"
 };
 

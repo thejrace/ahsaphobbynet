@@ -1,6 +1,6 @@
 <?php
 
-	require "/home/ahsaphobby.net/httpdocs/v2/common/ah_base.php";
+	require "C:/xampp2/htdocs/ahsaphobbynet/common/ah_base.php";
 
 
 	// DB tablo isimleri

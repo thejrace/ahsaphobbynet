@@ -1,7 +1,8 @@
 <?php
 
 	/******* KLASORLER *******/
-	define("MAIN_DIR", "/home/ahsaphobby.net/httpdocs/v2/");
+	//define("MAIN_DIR", "/home/ahsaphobby.net/httpdocs/v2/");
+	define("MAIN_DIR", "C:/xampp2/htdocs/ahsaphobbynet/");
 
 	// admin klasörleri
 	define("ADMIN_DIR", MAIN_DIR . "admin/");
@@ -39,7 +40,7 @@
 	define("RES_IMG_CATEGORY_IMG_DIR",      RES_IMG_STATIC_DIR . "category_img/");
 
 		/******* URL *******/
-	define("MAIN_URL",    "http://ahsaphobby.net/v2/");
+	define("MAIN_URL",    "http://ahsaphobbynet.test/");
 	
 	// site url leri
 	define("SITE_URL",    MAIN_URL . "site/");

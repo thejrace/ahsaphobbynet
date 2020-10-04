@@ -1,7 +1,7 @@
 <?php
 
-	define("MAIN_DIR",    "/home/ahsaphobby.net/httpdocs/v2/");
-	define("WEB_ADDR",    "http://ahsaphobby.net/v2/");
+	define("MAIN_DIR",    "C:/xampp2/htdocs/ahsaphobbynet/");
+	define("WEB_ADDR",    "http://ahsaphobbynet.test/");
 	define("ADMIN_DIR",    MAIN_DIR . "admin/");
 	define("SITE_DIR",     MAIN_DIR . "site/");
 	define("COMMON_DIR",   MAIN_DIR . "common/");
@@ -12,9 +12,7 @@
 	define("RES_IMG_STATIC_DIR",      MAIN_DIR . "res/img/static/");
 	define("RES_IMG_STATIC_WEB",      WEB_ADDR . "res/img/static/");
 
-
-	ini_set('error_log', "/home/ahsaphobby.net/httpdocs/v2/admin/inc/error.log");
-
+	ini_set('error_log', "C:/xampp2/htdocs/ahsaphobbynet/inc/error.log");
 
 	function autoload_main_classes($class_name){
 		$file = CLASS_DIR . $class_name. '.php';

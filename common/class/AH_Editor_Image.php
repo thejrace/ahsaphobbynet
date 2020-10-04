@@ -129,6 +129,10 @@
 			return $this->img_url;
 		}
 
+        public function get_img_path(){
+            return $this->img_src;
+        }
+
 		public function get_return_text(){
 			return $this->return_text;
 		}
